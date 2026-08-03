@@ -1,3 +1,5 @@
+package modulo1;
+
 import java.util.Scanner;
 
 public class Entradadados2 {

@@ -1,3 +1,5 @@
+package modulo1;
+
 public class funcoesmat {
     public static void main(String[] args){
 

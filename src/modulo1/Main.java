@@ -1,3 +1,5 @@
+package modulo1;
+
 import java.util.Locale;
 
 public class Main{
@@ -58,12 +60,7 @@ public class Main{
         Locale.setDefault(Locale.US);
         System.out.printf("us decimal point: %.3f%n",measure);
 
-
-
-
-
-
-
+        
         //PROCESSAMENTO DE DADOS
 
         int  p, o;
