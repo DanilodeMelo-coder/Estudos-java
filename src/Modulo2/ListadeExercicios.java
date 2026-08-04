@@ -50,5 +50,52 @@ public class ListadeExercicios {
         }
 
 
+        //exercicio 5
+
+        int codigo, quant;
+        double resultado;
+
+        codigo = sc.nextInt();
+        quant = sc.nextInt();
+
+        if (codigo == 1){
+            resultado = (double) 4.00 * quant;
+        }
+        else if (codigo == 2){
+            resultado = (double) 4.50 * quant;
+        }
+        else if (codigo == 3) {
+            resultado = (double) 5.00 * quant;
+        }
+        else if (codigo == 4) {
+            resultado = (double) 2.00 * quant;
+        }
+        else {
+            resultado = (double) 1.50 * quant;
+        }
+
+        System.out.println("Total: R$ " + resultado);
+
+
+        //Exercicio 6
+
+        double valor = sc.nextDouble();
+
+        if (valor >= 0 && valor <= 25){
+            System.out.println("INTERVALO (0,25)");
+        }
+        else if(valor > 25 && valor <50){
+            System.out.println("INTERVALO (25,50)");
+        }
+        else if(valor >= 50 && valor <75){
+            System.out.println("INTERVALO (50,75)");
+        }
+        else if(valor > 75 && valor <100){
+            System.out.println("INTERVALO (75,100)");
+        }
+        else{
+            System.out.println("Valor fora do intervalo");
+        }
+
     }
 }
