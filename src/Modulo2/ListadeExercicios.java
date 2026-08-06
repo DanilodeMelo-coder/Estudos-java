@@ -97,5 +97,38 @@ public class ListadeExercicios {
             System.out.println("Valor fora do intervalo");
         }
 
+        //Exercicio 7
+
+
+        double x, y;
+        String quadrante = "";
+
+        x = sc.nextDouble();
+        y = sc.nextDouble();
+
+        if (x < 0 && y > 0){
+            quadrante = "Q2";
+        }
+        else if (x > 0 && y > 0){
+            quadrante = "Q1";
+        }
+        else if (x < 0 && y < 0) {
+            quadrante = "Q3";
+
+        }
+        else if (x > 0 && y < 0) {
+            quadrante = "Q4";
+
+        }
+
+        System.out.println(quadrante);
+
+
+
+
+
+
+
+
     }
 }
