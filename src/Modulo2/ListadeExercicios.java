@@ -49,6 +49,25 @@ public class ListadeExercicios {
             System.out.println("Não são Multiplos");
         }
 
+        //Exercicio 4
+
+        int hi, hf, horas = 0;
+
+        hi =sc.nextInt();
+        hf = sc.nextInt();
+
+        if (hi == hf){
+            horas = 24;
+        }
+        else if (hi < hf){
+            horas = Math.abs(hi - hf);
+        }
+        else if (hi > hf){
+            horas = (24 - hi) + hf;
+        }
+
+        System.out.printf("O jogo durou %d hora(s)", horas);
+
 
         //exercicio 5
 
@@ -124,6 +143,34 @@ public class ListadeExercicios {
         System.out.println(quadrante);
 
 
+        // Exercicio 8
+
+        Double calculo_imposto;
+
+        Double sl = sc.nextDouble();
+
+        if ( sl <= 2000.00){
+            calculo_imposto = 0.0;
+
+        }
+        else if (sl <= 3000.00){
+            calculo_imposto = (sl - 2000.0) * 0.08;
+
+        }
+        else if (sl <= 4500.00){
+            calculo_imposto = (sl - 3000.0) * 0.18 + 1000.0 * 0.08;
+
+        }
+        else{
+            calculo_imposto = (sl - 4500) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+        }
+
+        if (calculo_imposto == 0.0) {
+            System.out.println("Isento");
+        }
+        else {
+            System.out.printf("R$ %.2f%n", calculo_imposto);
+        }
 
 
 
