@@ -73,6 +73,48 @@ public class ListaExercicios {
             }
         }
 
+        //Exercicio 5
+
+        int valorFat = sc.nextInt();
+        long fat = 1;
+
+        for (int i = 1; i <= valorFat; i ++){
+
+            fat *= i;
+
+        }
+
+        System.out.println(fat);
+
+
+        //Exercicio 6
+
+        int valorDiv = sc.nextInt();
+
+        for (int i = 1; i <= valorDiv; i++){
+
+            if (valorDiv % i == 0){
+
+                System.out.println(i);
+            }
+        }
+
+        //Exercicio 7
+
+        int varE7 = sc.nextInt();
+
+
+        for (int i = 1; i <= varE7; i++ ){
+
+
+            int primeiro = i;
+            int segundo = i * i;
+            int terceiro = i * i * i;
+
+            System.out.printf("%d %d %d%n",primeiro, segundo, terceiro);
+
+        }
+
 
 
 

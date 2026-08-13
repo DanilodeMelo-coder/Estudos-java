@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 // Arquivo em branco desinado a resolver os exercicios e passar para alista ao final
@@ -7,14 +8,6 @@ public class ResoluçãoExercicios {
         Scanner sc = new Scanner(System.in);
 
 
-        int valorFat = sc.nextInt();
-        int fat = 0;
-
-        for (int i = 0; i != valorFat; i ++){
-
-            fat =  valorFat - 1;
-
-        }
 
 
 
@@ -24,6 +17,7 @@ public class ResoluçãoExercicios {
 
 
 
-        sc.close();
+
+            sc.close();
     }
 }
