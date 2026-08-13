@@ -7,6 +7,14 @@ public class ResoluçãoExercicios {
         Scanner sc = new Scanner(System.in);
 
 
+        int valorFat = sc.nextInt();
+        int fat = 0;
+
+        for (int i = 0; i != valorFat; i ++){
+
+            fat =  valorFat - 1;
+
+        }
 
 
 
