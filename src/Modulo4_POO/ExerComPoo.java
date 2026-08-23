@@ -5,6 +5,8 @@ import Modulo4_POO.entities.triangulo;
 import java.util.Scanner;
 
 
+
+
 public class ExerComPoo {
     public static void main(String[] args){
 
@@ -19,9 +21,7 @@ public class ExerComPoo {
         x.b = sc.nextDouble();
         x.c = sc.nextDouble();
 
-        double px = calcularP(x.a,x.b,x.c);
-
-        double areaX = calcularArea(x.a,x.b,x.c, px);
+        double areaX = x.calcularArea();
 
 
         System.out.println("Digite os lados do triangulo Y: ");
@@ -29,9 +29,7 @@ public class ExerComPoo {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double py = calcularP(y.a,y.b,y.c);
-
-        double areaY = calcularArea(y.a,y.b,y.c, py);
+        double areaY = y.calcularArea();
 
         System.out.printf("Area de X: %.4f%n", areaX);
         System.out.printf("Area de Y: %.4f%n",areaY);
@@ -43,21 +41,6 @@ public class ExerComPoo {
     }
 
 
-
-    public static Double calcularP(double a, double b,double c){
-
-        double p = (a + b + c)/2;
-
-        return p;
-    }
-
-    public static Double calcularArea(double a, double b, double c,double p){
-
-        double area = Math.sqrt(p*(p-a) * (p-b) * (p-c));
-
-        return area;
-
-    }
 
     public static String checarmaiorArea(double x, double y){
 
@@ -71,9 +54,6 @@ public class ExerComPoo {
 
             return maior = "Y";
         }
-
-
-
 
     }
 }
