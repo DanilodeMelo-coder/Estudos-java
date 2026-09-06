@@ -1,6 +1,8 @@
+package Exercicios_Mobile;
+
 import java.util.Scanner;
 
-public class Main {
+public class ExercicioPoo_produto {
 	
 	public static class Produto{
 	    
