@@ -36,7 +36,7 @@ public class aula_139 {
         if (acc3 instanceof SavingsAccount){
             SavingsAccount acc5 = (SavingsAccount) acc3;
             acc5.upgradeBalance();
-            System.out.println("Update!");
+            System.out.println("Update! ");
         }
     }
 }
